@@ -117,7 +117,7 @@ public class TechJobs {
             System.out.println("No jobs found. Try again");
         } else {
             for (HashMap someJob : someJobs) {
-                System.out.println("\n");
+                System.out.print("\n*****\n");
                 for (var entry : someJob.entrySet()) {
                     var entryFormatted = entry.toString().replace("=", " = ");
                     String entryFormattedFinal = entryFormatted.substring(0,1).toUpperCase() + entryFormatted.substring(1);
