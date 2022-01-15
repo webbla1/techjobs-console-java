@@ -117,12 +117,14 @@ public class TechJobs {
             System.out.println("No jobs found. Try again");
         } else {
             for (HashMap someJob : someJobs) {
+                System.out.println("\n");
                 for (var entry : someJob.entrySet()) {
-                    System.out.println(entry);
+                    var entryFormatted = entry.toString().replace("=", " = ");
+                    String entryFormattedFinal = entryFormatted.substring(0,1).toUpperCase() + entryFormatted.substring(1);
+                    System.out.println(entryFormattedFinal);
                 }
                 System.out.println("*****");
             }
         }
-        //System.out.println("printJobs is not implemented yet");
     }
 }
